@@ -42,9 +42,10 @@ CREATE TABLE ProductInventory (
 --changeset dev:1 labels:0.0.2
 CREATE TABLE Users (
     ID INT,
-    FirstName CHAR(50),
-    LastName CHAR(50),
-    Email CHAR(50)
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Email VARCHAR(50),
+    PRIMARY KEY (ID)
 );
 --rollback DROP TABLE Users;
 
